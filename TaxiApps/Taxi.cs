@@ -12,7 +12,7 @@ namespace TaxiApps
         public void TaxiInfo()
         {
             Console.WriteLine("Driver Name : {0}", Name);
-            Console.WriteLine("On Duty : {0}", Status);
+            Console.WriteLine("On Duty Status : {0}", Status);
             Console.WriteLine("Number of Passenger : {0}", Passenger);
         }
 
