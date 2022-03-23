@@ -4,10 +4,27 @@ namespace TaxiApps
     public class Taxi
     {
         //membuat properti
-        public string DriverName { get; set; }
-        public bool OnDuty { get; set; }
-        public int NumPassenger { get; set; }
+        public string Name { get; set; }
+        public bool Status { get; set; }
+        public int Passenger { get; set; }
 
-        
+        //membuat method
+        public void TaxiInfo()
+        {
+            Console.WriteLine("Driver Name : {0}", Name);
+            Console.WriteLine("On Duty : {0}", Status);
+            Console.WriteLine("Number of Passenger : {0}", Passenger);
+        }
+
+        public void PickUpPassenger()
+        {
+            Console.WriteLine("{0} sedang menjemput penumpang", Name);
+        }
+
+        public void DropOffPassenger()
+        {
+            Console.WriteLine("{0} selesai mengantar penumpang", Name);
+        }
+
     }
 }
