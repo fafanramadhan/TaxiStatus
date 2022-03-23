@@ -18,12 +18,12 @@ namespace TaxiApps
 
         public void PickUpPassenger()
         {
-            Console.WriteLine("{0} sedang menjemput penumpang", Name);
+            Console.WriteLine("{0} On Duty picking up passenger", Name);
         }
 
         public void DropOffPassenger()
         {
-            Console.WriteLine("{0} selesai mengantar penumpang", Name);
+            Console.WriteLine("{0} Done droping off passenger", Name);
         }
 
     }
