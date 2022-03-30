@@ -7,23 +7,42 @@ namespace TaxiApps
         public string Name { get; set; }
         public bool Status { get; set; }
         public int Passenger { get; set; }
+        
+
 
         //membuat method
         public void TaxiInfo()
         {
+            Console.WriteLine("--- Driver Status ---");
             Console.WriteLine("Driver Name : {0}", Name);
-            Console.WriteLine("On Duty Status : {0}", Status);
-            Console.WriteLine("Number of Passenger : {0}", Passenger);
+            
         }
 
         public void PickUpPassenger()
         {
-            Console.WriteLine("{0} On Duty picking up passenger", Name);
+            if (Status == true)
+            {
+                Console.WriteLine("{0} Picking up passenger", Name);
+            }
+            else
+            {
+                Console.WriteLine("{0} Laying down on his bed at home", Name);
+            }
+
+            
         }
 
         public void DropOffPassenger()
         {
-            Console.WriteLine("{0} Done droping off passenger", Name);
+            if (Passenger == 0)
+            {
+                Console.WriteLine("{0} Dropping off passenger", Name);
+            }
+            else
+            {
+                Console.WriteLine("{0} Transporting passengers to their destination ", Name);
+            }
+            
         }
 
     }
