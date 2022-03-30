@@ -40,7 +40,7 @@ namespace TaxiApps
             }
             else
             {
-                Console.WriteLine("{0} Transporting passengers to their destination ", Name);
+                Console.WriteLine("{0} Transporting passengers to their destination", Name);
             }
             
         }

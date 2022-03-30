@@ -12,7 +12,7 @@ taksi1.Status = Console.ReadLine().ToLower() == "yes" ? true : false;
 
 if (taksi1.Status)
 {
-    Console.Write("Number of Passanger:  ");
+    Console.Write("Number of Passanger: ");
     taksi1.Passenger = Convert.ToInt32(Console.ReadLine());
     
     Console.Clear();
@@ -29,7 +29,7 @@ else
     taksi1.PickUpPassenger();
     taksi1.DropOffPassenger();
 
-    Console.ReadKey();
+    Console.ReadKey(); 
 }
 
 
